@@ -7,7 +7,7 @@ const Player = ({ name, symbol }) => {
     // console.log("State of isEditing (" + symbol + "): " + isEditing);
 
     const handleEdit = () => {
-        setIsEditing(!isEditing);
+        setIsEditing(editing => !isEditing);
         // console.log("State of isEditing (" + symbol + "): " + isEditing + " to " + !isEditing);
     }
 
