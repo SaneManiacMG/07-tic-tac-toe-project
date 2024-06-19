@@ -1,5 +1,5 @@
 const GameBoard = ({ onSelectSquare, board }) => {
-    
+    console.log("GameBoard rendered...");
 
     return (
         <ol id="game-board">

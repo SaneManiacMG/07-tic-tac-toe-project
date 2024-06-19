@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 const Player = ({ initialName, symbol, isActive, onChangeName }) => {
+    console.log("Player component rendered...");
+
     const [playerName, setPlayerName] = useState(initialName);
-
     const [isEditing, setIsEditing] = useState(false);
-
 
     const handleEdit = () => {
         setIsEditing(editing => !editing);

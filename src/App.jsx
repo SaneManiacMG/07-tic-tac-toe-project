@@ -58,6 +58,8 @@ const deriveGameBoard = (gameTurns) => {
 }
 
 function App() {
+  console.log("App component rendered...");
+
   const [players, setPlayers] = useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
 

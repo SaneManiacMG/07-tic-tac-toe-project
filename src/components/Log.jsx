@@ -1,4 +1,5 @@
 const Log = ({ turns }) => {
+    console.log("Log component rendered...");
 
     return (
         <ol id="log">
