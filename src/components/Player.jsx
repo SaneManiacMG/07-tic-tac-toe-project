@@ -1,12 +1,10 @@
 import { useState } from 'react';
 
 const Player = ({ initialName, symbol, isActive, onChangeName }) => {
-    // console.log("Player Component rendered (" + symbol + ")");
-
     const [playerName, setPlayerName] = useState(initialName);
 
     const [isEditing, setIsEditing] = useState(false);
-    // console.log("State of isEditing (" + symbol + "): " + isEditing);
+
 
     const handleEdit = () => {
         setIsEditing(editing => !editing);
@@ -17,7 +15,6 @@ const Player = ({ initialName, symbol, isActive, onChangeName }) => {
     }
 
     const handleNameChange = (event) => {
-        // console.log(event);
         setPlayerName(event.target.value);
     };
 
